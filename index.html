@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPV Einsteiger</title>
+    <style>
+    body {
+        margin: 0;
+        width: 100%;
+      height: 100%;
+      background-image: url(/img/avata.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      object-fit: cover;
+
+      
+        
+        
+      
+    }
+
+    .header-image {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+
+    }
+
+    .container {
+        position: absolute;
+        right: 32px;
+        left:32;
+        top: 5px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+     .menu-link {
+        color:black;
+        text-decoration: none;
+        margin-left: 16px;
+        
+        
+    }
+
+    .menu-link:hover {
+        text-decoration: underline;
+        color: rgb(0, 37, 138);
+    }
+
+    .logo {
+      height: 70px;
+      border-radius: 15px;
+      padding-right: 870px;
+      
+      
+    }
+
+    .headline {
+      position: absolute;
+      left: 40px;
+      top: 180px;
+      color: rgb(255, 255, 255);
+      font-size: 70px;
+      width: 500px;
+      
+    }
+
+    .blue {
+      color: #557cfc;
+    }
+
+    .dblue {
+      color: rgb(0, 0, 255);
+    }
+    
+    .text1 {
+      height: 300px;
+      padding: 30px 100px;
+      display: flex;
+      gap: 50px;
+      color: aliceblue;
+    }
+
+    .half-width {
+      width: 50%;
+      font-size: 30px;
+      
+
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 50px;
+      color: aliceblue;
+
+    }
+
+    .text2 {
+      text-align: center;
+      font-size: 50px;
+      position: absolute;
+      margin-top: 350px;
+      margin-left: 360px;
+      color: aliceblue;
+    }
+
+
+
+    .text3 {
+      position: absolute;
+      margin-top: 480px;
+      margin-left: 80px;
+      font-size: 30px;
+      width: 600px;
+      color: aliceblue;
+    }
+
+    .überschrifttext3 {
+      position: absolute;
+      margin-top: 430px;
+      margin-left: 110px;
+      font-size: 30px;
+      color: aliceblue;
+    }
+
+    .überschrifttext4 {
+      position: absolute;
+      margin-top: 430px;
+      margin-left: 920px;
+      font-size: 30px;
+      color: aliceblue;
+    }
+
+    .text4 {
+      position: absolute;
+      margin-top: 480px;
+      margin-left: 900px;
+      font-size: 30px;
+      width: 600px;
+      color: aliceblue;
+    }
+
+    .überschrifttext5 {
+      text-align: center;
+      font-size: 50px;
+      margin-top: 1000px;
+      color: aliceblue;
+
+    }
+
+    .text5 {
+      position: absolute;
+      margin-top: 110px;
+      margin-left: 780px;
+      font-size: 30px;
+      width: 700px;
+      color: aliceblue;
+    }
+
+    .videox {
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 60px;
+      font-size: 30px;
+      width: 800px;
+    }
+
+    .videoxü {
+      position: absolute;
+      margin-top: 110px;
+      margin-left:290px;
+      font-size: 30px;
+      width: 800px;
+      color: aliceblue;
+    }
+    .videoproü {
+      position: absolute;
+      margin-top: 500px;
+      margin-left:290px;
+      font-size: 30px;
+      width: 800px;
+      color: aliceblue;
+    }
+    
+    .videopro {
+      position: absolute;
+      margin-top: 540px;
+      margin-left: 60px;
+      font-size: 30px;
+      width: 800px;
+    }
+
+    .videocxü {
+      position: absolute;
+      margin-top: 900px;
+      margin-left:290px;
+      font-size: 30px;
+      width: 800px;
+      color: aliceblue;
+    }
+
+    .videocx {
+      position: absolute;
+      margin-top: 935px;
+      margin-left: 60px;
+      font-size: 30px;
+      width: 800px;
+    }
+
+    .opensource {
+      text-align: center;
+      width: 1000px;
+      font-size: 50px;
+      margin-top: 1500px;
+      margin-left: 300px;
+      color: aliceblue;
+
+    }
+
+    .videoopensource {
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 530px;
+      font-size: 30px;
+      width: 800px;
+    }
+
+    .digital {
+      text-align: center;
+      width: 1000px;
+      font-size: 50px;
+      margin-top: 600px;
+      margin-left: 300px;
+      color: aliceblue;
+    }
+
+    .selbstbaut {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 150px;
+      margin-left: 150px;
+      width: 400px;
+      color: aliceblue;
+
+    }
+
+    .selbstbauv {
+      display: flex;
+      position: absolute;
+     margin-top: -230px;
+      margin-left: 810px;
+      font-size: 250px;
+      width: 800px;
+    }
+
+    .fertigcopter {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 130px;
+      margin-left: 150px;
+      width: 400px;
+      color: aliceblue;
+    }
+    
+    .fertigcopterv {
+      margin-left: 810px;
+      margin-top: -250px;
+
+    }
+
+    .avatav {
+      margin-left: 810px;
+      margin-top: -220px;
+    }
+
+    .avatat {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 130px;
+      margin-left: 150px;
+      width: 400px;
+      color: aliceblue;
+    }
+
+    
+    
+
+    
+
+    </style>
+  </head>
+  <body>
+    
+   <img class="header-image" src="/img/fpvhintergrund.jpg"> 
+   
+   
+   
+    <div class="container">
+      <img class="logo" src="img/MY FPV.png">
+      <div>
+    <a class="menu-link" href="">Home</a>
+    <a class="menu-link" href="">Kontakt</a>
+    <a class="menu-link" href="">Anrufen</a>
+    <a class="menu-link" href="">Impressum</a>
+   </div>
+   </div>
+
+   
+
+   <h1 class="headline"><span class="blue">MY FPV</span>: Ihr Leitfaden zum perfekten FPV-Set!</h1>
+   <img class="logo" src="img/MY FPV.png">
+   
+
+
+<h2>Was ist Fpv</h2>
+   <div class="text1">
+    <div class="half-width">
+     FPV steht für “First Person View”, was frei übersetzt “Sicht aus der Ich-Perspektive” bedeutet1. Es handelt sich um eine Variante des RC-Modellbaus, bei der das Modell mittels Kameratechnik aus der Perspektive des ferngesteuerten Modells gesteuert wird, als ob man selbst der Fahrer oder Pilot wäre1. FPV kann bei allen Arten von RC-Modellen und sogar bei militärischen Drohnen eingesetzt werden1. Es wird am häufigsten bei Flugmodellen wie Quadrocoptern oder normalen Modellflugzeugen verwendet
+    </div >
+    <iframe class="half-width" width="359" height="600" src="https://www.youtube.com/embed/IuKQDXOANtA" title="Was ist #FPV ? 🚁 #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <h2 class="text2">Vor und nachtele von Digital und Analog</h2>
+
+  <h3 class="überschrifttext3">Digitale FPV-Systeme</h3>
+
+  
+    <div class="text3">
+      <li>Bieten eine hohe Bildqualität bei 720p mit bis zu 60/120 FPS.</li>
+    <li>Bieten eine hohe Reichweite und ein stabiles Bild.</li>
+  <li>Sind nicht mit jedem Frame kompatibel.</li>
+ <li>Sind ziemlich teuer.</li>
+  <li>Sind größer und schwerer als analoge Systeme.</li>
+  <li>Können nur mit kompertieblen Brille genutzt werden welche 450-750 Euro kosten.</li>
+  <li>Bieten die Möglichkeit, großartige Aufnahmen zu machen, ohne eine GoPro verwenden zu müssen.</li>
+    </div>
+
+    <h3 class="überschrifttext4">Analoge FPV-Systeme</h3>
+
+    <div class="text4">
+      <li>Bei qualitativ hochwertigen Empfängern, Sendern & Antennen kannst du eine hohe Reichweite sowie ein gutes Bild erzielen.</li>
+<li>Sind ein langjährig bewährtes System.</li>
+<li>Bieten ein großes Angebot an Komponenten (Brillen, Empfänger, Videosender, etc.).</li>
+<li>Sind kostengünstiger als digitale Systeme.</li>
+<li>Sind kompakt & leicht</li>
+<li>Das bild sieht so aus wie man es im short oben gesehen hat</li>
+    </div>
+
+    <h2 class="überschrifttext5">Günstige fertigbau sets</h2>
+
+    <div class="text5">
+      <li><span class="dblue">BetaFPV X</span> Die BetaFPV X ist ein Top-Modell, das sowohl für Anfänger als auch für erfahrene Piloten geeignet ist12. Sie ist leistungsstärker und macht mehr Spaß als andere Modelle1. Die Drohne ist klein, misst nur 135 x 135 x 60 mm und wiegt 81 g inklusive der beiden benötigten Batterien1. Sie verfügt über eine verstellbare FPV-Kamera, die auf einen Winkel zwischen 0 und 40 Grad eingestellt werden kann1. Der Rahmen ist robust und gebaut, um Stöße zu widerstehen.</li>
+
+<li> <span class="dblue">BetaFPV Pro </span>Die BetaFPV Pro ist günstiger und einfacher zu fliegen als die Cetus X3. Sie ist ideal für Piloten, die in die Welt der FPV-Drohnen einsteigen und null Erfahrung haben45. Die Drohne besteht aus einem Rahmen, der als Propellerschutz und Landegestell dient4. Das Material ist robust genug, um kontinuierliche Abstürze und Treffer mit Hindernissen zu bewältigen4. Ein großer Nachteil dieser Drohne ist, dass sie keine Videos aufnehmen kann.</li>
+
+<li><span class="dblue">Cetus X </span>Die Cetus X ist das Spitzenmodell der Cetus-Reihe und eignet sich sowohl für absolute FPV-Anfänger als auch für erfahrene FPV-Piloten2. Sie ist leistungsstark genug für Freestyle-Flüge2. Die Cetus X ist etwas größer als die Cetus Pro und misst 117 x 117 x 35 mm4. Sie hat mehr Motorleistung, was sie reaktionsschneller auf Senderbefehle macht3. Außerdem haben die kompatiblen Brillen eine DVR-Aufnahme, so dass Sie Ihr Filmmaterial studieren können.</li>
+
+<li><span class="dblue">Zusammenfassung </span>zusammenfassend lässt sich sagen, dass alle drei Modelle gut für den Innenbereich geeignet sind, aber die Wahl des Modells hängt von Ihrem Budget und Ihrer Flugerfahrung ab. Wenn Sie ein Anfänger sind und ein begrenztes Budget haben, könnte die BetaFPV Pro eine gute Wahl sein. Wenn Sie jedoch etwas mehr Erfahrung haben und nach einer leistungsstärkeren Drohne suchen, könnten die BetaFPV X oder die Cetus X besser geeignet sein.</li>
+    </div>
+    <div class="videox">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FMKTZpKpcz4?si=O2YyYPeEKe6Gxq2a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <h3 class="videoxü">Beta FPV X</h3>
+
+    <h3 class="videoproü">Beta FPV Pro</h3>
+
+    <div class="videopro">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/47NMeUDqiNs?si=wswpvideJJMBPPtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="videocxü">Beta FPV Cetun X</h3>
+
+    <div class="videocx">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/T-mjRitRmJY?si=pEsvlwfnyCOwK4bj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="opensource">
+      Wen mann günstig open source im anerlogen bereich sein will kann man sich zumbeispiel so ein set zusammen stellen  
+    </h3>
+
+    <div class="videoopensource">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tvvnKDRdf9o?si=5TBfeZLi_6dy60SW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="digital">
+      Digital
+    </h3>
+
+    <div class="selbstbaut">
+      Man kann sich natürlich eine digitalen copter selbst bauen was sehr individuel ist und ein paar skills erfordert 
+    </div>
+
+    <div class="selbstbauv">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IIDLzeMEc5Q?si=sNnWLQ7vsL1zO0xl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="fertigcopter">
+      eine andere möklichteit ist sich einen fertigen digital copter zu kaufen den man aber immernoch alles mökliche dran bauen kann und an sein flugsteal anpassen kann ein beisiel dafür ist der iFlight Nazgul Evoque F5 V2
+    </div>
+    <div class="fertigcopterv">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pxAlNo9p6WM?si=qQ6UGEpJ2iojVIwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      
+    <div class="avatat">
+      Oder man kauft sich ein fertig set zumbeispiel die DJI Avata an der man jetoch nichts mehr enderkann.
+    </div>
+    
+    <div class="avatav">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tqCyAxM3Ajw?si=cgGCIEG-bNoXQ0Q1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+  
+  
+  </body>
+</html>
